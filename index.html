@@ -167,6 +167,19 @@ function typeWrite(){
             }
 
         }
+	<script type="text/javascript">
+    	document.addEventListener('DOMContentLoaded', function () {
+            function audioAutoPlay() {
+                var audio = document.getElementById('bgmusic');
+                audio.play();
+                document.addEventListener("WeixinJSBridgeReady", function () {
+                    audio.play();
+                    }, false);
+                 }
+                 audioAutoPlay();
+                 });
+
+	    
 setInterval("toggleSound()",1);
 </script>
 
